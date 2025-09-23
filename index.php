@@ -14,7 +14,7 @@ $title = "Anime Nutshell";
 
     <?php 
 
-    $anime = [
+    $animes = [
         [
             "title" => "Naruto",
             "episodes" => "220",
@@ -22,12 +22,28 @@ $title = "Anime Nutshell";
         ],
         [
             "title" => "One Piece",
-            ""
-
+            "episodes" => 1000,
+            "rating" => 9.0
+        ],
+        [
+            "title" => "Attack On Titan",
+            "episodes" => 75,
+            "rating" => 9.1
         ]
-    ]
 
+      ];
     ?>
+
+    <h2>Anime List</h2>
+    <ul>
+        <?php  foreach ($animes as $anime): ?>
+            <li>
+                <? $anime["title"] ?> -
+                Episodes: <?= $anime["episodes"] ?> -
+                Rating: <?= $anime["rating"] ?>
+            </li>
+            <?php endforeach; ?>
+    </ul>
 
 
     
