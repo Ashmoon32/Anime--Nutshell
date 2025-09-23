@@ -32,7 +32,7 @@ $title = "Anime Nutshell";
         ],
         [
             "title" => "Death Note",
-            "eposides" => 37,
+            "episodes" => 37,
             "rating" =>  8.9
         ]
 
