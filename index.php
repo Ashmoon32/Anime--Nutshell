@@ -29,6 +29,11 @@ $title = "Anime Nutshell";
             "title" => "Attack On Titan",
             "episodes" => 75,
             "rating" => 9.1
+        ],
+        [
+            "title" => "Death Note",
+            "eposides" => 37,
+            "rating" =>  8.9
         ]
 
       ];
