@@ -2,5 +2,45 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+
+body {
+    height: 100vh;
+    background-color: antiquewhite;
+}
+
+.main-container {
+    display: block;
+    width: 80%;
+    max-width: 400px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+header {
+    font-size: larger;
+    font-style: oblique;
+    text-align: center;
+    text-shadow: 2px 2px 2px gray;
+}
+
+
+
+main input {
+   padding: 10px 40px 10px 15px;
+   margin: 5px;
+   border-radius: 20px;
+   width: 100%;
+   border: 2px solid black;
+}
+
+input:hover {
+    border: 2px solid rgb(15, 33, 87);
+        box-shadow: 1px 1px 5px 2px rgb(23, 55, 55);
+}
+
+
 
