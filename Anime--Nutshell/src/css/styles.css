@@ -17,7 +17,7 @@ body {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
 }
 
 header {
@@ -28,32 +28,33 @@ header {
 }
 
 main {
-    display: flex;
-    gap: 10px;
+    position: relative;
+    width: 90%;
+    max-width: 400px;
+    margin: 0 auto;
 }
 
 main input {
-   padding: 10px 40px 10px 15px;
-   margin: 5px;
-   border-radius: 20px;
-   width: 100%;
-   border: 2px solid black;
+    padding: 10px 40px 10px 15px;
+    margin: 5px;
+    border-radius: 25px;
+    width: 100%;
+    border: 2px solid black;
+    font-size: 16px;
 }
 
 input:hover {
     border: 2px solid rgb(15, 33, 87);
-        box-shadow: 1px 1px 5px 2px rgb(23, 55, 55);
+    box-shadow: 1px 1px 5px 2px rgb(23, 55, 55);
 }
 
-button {
+main>img {
     height: 30px;
-    width: 30px;
-    padding: 2px;
-    font-size: larger;
-    border-radius: 50%;
-    
-
+    width: auto;
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #555;
+    cursor: pointer;
 }
-
-
-
