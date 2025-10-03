@@ -48,7 +48,7 @@ input:hover {
     box-shadow: 1px 1px 5px 2px rgb(23, 55, 55);
 }
 
-main>img {
+#searchBtn {
     height: 30px;
     width: auto;
     position: absolute;

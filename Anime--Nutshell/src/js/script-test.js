@@ -1,7 +1,9 @@
+// ./js/script.js
+
 const characters = [
     {
         name: "Naruto",
-        image: "",
+        image: "https://upload.wikimedia.org/wikipedia/en/9/94/Naruto_Uzumaki.png",
         personal: "Shinobi of Konohagakure, member of Team 7, future Hokage.",
         about: "Naruto Uzumaki is the main protagonist of Naruto. He was shunned in childhood for being the host of Kurama, the Nine-Tails. Despite hardships, he never gave up on his dream of becoming Hokage.",
         powers: "Shadow Clone Jutsu, Rasengan, Sage Mode, Kurama Chakra Mode.",
@@ -45,18 +47,10 @@ const input = document.getElementById("searchInput");
 const btn = document.getElementById("searchBtn");
 const results = document.getElementById("results");
 
-function doSearch() {
-    const query = input.ariaValueMax.trim().toLowerCase();
-    const character = characters.find(c => c.name.toLowerCase() === query);
-
-    if (!character) {
-        results.innerHTML = `<p>No character found. Try Naruto, Saitama, Goku, Sung Jin Woo or Light Yagami.</p>`;
-        return;
-    }
-
+function renderCharacter(character) {
     results.innerHTML = `
     <div class="result">
-     <img src="${character.image}" alt="${character.name}">
+      <img src="${character.image}" alt="${character.name}">
       <div class="info">
         <h2>${character.name}</h2>
         <div class="section"><strong>Personal:</strong> ${character.personal}</div>
@@ -68,8 +62,31 @@ function doSearch() {
   `;
 }
 
-input.addEventListener("keydown", e => { if (e.key === "Enter") doSearch(); });
-btn.addEventListener("click", doSearch);
+function doSearch() {
+    const query = input.value.trim().toLowerCase();           // <-- use .value
+    if (!query) {
+        results.innerHTML = `<p>Please type a character name (e.g. Naruto).</p>`;
+        return;
+    }
 
+    // partial, case-insensitive match
+    const character = characters.find(c => c.name.toLowerCase().includes(query));
 
+    if (!character) {
+        results.innerHTML = `<p>No character found. Try Naruto, Saitama, Goku, Sung Jin Woo or Light Yagami.</p>`;
+        return;
+    }
 
+    renderCharacter(character);
+}
+
+// Enter key triggers search
+input.addEventListener("keydown", e => {
+    if (e.key === "Enter") doSearch();
+});
+
+// Click icon triggers search & focuses the input
+btn.addEventListener("click", () => {
+    input.focus();
+    doSearch();
+});
