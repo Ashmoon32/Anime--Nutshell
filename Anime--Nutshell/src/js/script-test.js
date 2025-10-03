@@ -3,7 +3,7 @@
 const characters = [
     {
         name: "Naruto",
-        image: "https://upload.wikimedia.org/wikipedia/en/9/94/Naruto_Uzumaki.png",
+        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSn7k6tuiz8A32oKrWyRIGnRcJkcwW4bR-eUA&s",
         personal: "Shinobi of Konohagakure, member of Team 7, future Hokage.",
         about: "Naruto Uzumaki is the main protagonist of Naruto. He was shunned in childhood for being the host of Kurama, the Nine-Tails. Despite hardships, he never gave up on his dream of becoming Hokage.",
         powers: "Shadow Clone Jutsu, Rasengan, Sage Mode, Kurama Chakra Mode.",
@@ -11,7 +11,7 @@ const characters = [
     },
     {
         name: "Saitama",
-        image: "https://upload.wikimedia.org/wikipedia/en/c/c3/Saitama_One-Punch_Man.png",
+        image: "https://i.pinimg.com/564x/b8/3d/0d/b83d0d82bfd7b0df28e4e4b1b0a145c2.jpg",
         personal: "Also known as One Punch Man. Lives in City Z.",
         about: "Saitama is a hero who trained so hard he lost all his hair. He can defeat any enemy with a single punch but suffers from boredom due to his overwhelming power.",
         powers: "Infinite Strength, One Punch Kill, Unmatched Speed.",
@@ -19,7 +19,7 @@ const characters = [
     },
     {
         name: "Sung Jin Woo",
-        image: "https://static.wikia.nocookie.net/solo-leveling/images/9/9f/Sung_Jin-Woo_%28Webtoon%29.png",
+        image: "https://preview.redd.it/will-we-see-atleast-a-glimpse-of-sung-jin-woo-in-action-in-v0-ms73r0sfduuc1.jpeg?width=640&crop=smart&auto=webp&s=19aa267029a5c50e39d27274c2e8d23b6e35c0dc",
         personal: "Weakest hunter turned Shadow Monarch.",
         about: "Sung Jin Woo started as the weakest hunter in the world, but after surviving a deadly dungeon, he received a mysterious System that let him level up without limit.",
         powers: "Shadow Extraction, Shadow Army Command, Dagger Mastery, Immortality as Shadow Monarch.",
@@ -27,7 +27,7 @@ const characters = [
     },
     {
         name: "Goku",
-        image: "https://upload.wikimedia.org/wikipedia/en/0/0c/Goku_Anime_Dragon_Ball.png",
+        image: "https://miro.medium.com/1*rTr3xTZhxGJug-ioTu4G4A.jpeg",
         personal: "Saiyan raised on Earth, loves fighting strong opponents.",
         about: "Son Goku is the main protagonist of Dragon Ball. Originally sent to Earth as an infant, he became one of the greatest warriors, defending the planet from powerful enemies.",
         powers: "Kamehameha, Super Saiyan Transformations, Ultra Instinct.",
@@ -35,7 +35,7 @@ const characters = [
     },
     {
         name: "Light Yagami",
-        image: "https://upload.wikimedia.org/wikipedia/en/6/6f/Light_Yagami.png",
+        image: "https://img.goodfon.com/wallpaper/big/c/47/death-note-light-yagami-kira-3405.webp",
         personal: "Genius high school student who discovers the Death Note.",
         about: "Light Yagami is a brilliant but disillusioned young man who gains a supernatural notebook that kills anyone whose name is written in it. He adopts the persona 'Kira' to enforce his sense of justice.",
         powers: "Death Note (kills anyone by writing their name), Intelligence, Manipulation.",
